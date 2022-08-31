@@ -65,7 +65,7 @@ export const Home = () => {
                 commentsCount={0}
                 likesCount={0}
                 tags={obj.tags}
-                isEditable={userData?._id === obj.user}
+                isEditable={userData?._id === obj.user.id}
               />
             ))}
         </Grid>
