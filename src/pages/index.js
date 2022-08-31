@@ -1,0 +1,6 @@
+export { Home } from "./Home"
+export { FullCollection } from "./FullCollection"
+export { AddCollection } from "./AddCollection"
+export { Registration } from "./Registration"
+export { Login } from "./Login"
+export { MainPage } from "./MainPage/MainPage"
