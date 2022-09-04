@@ -8,7 +8,7 @@ import { Collection } from "../components/Collection"
 import { TagsBlock } from "../components/TagsBlock"
 import { fetchCollections, fetchTags } from "../redux/slices/collections"
 import { InputAdornment, TextField } from "@mui/material"
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search"
 
 
 
@@ -32,7 +32,6 @@ export const Home = () => {
         type="text"
         placeholder="Поиск по коллекциям"
         size="small"
-        //onClick={}
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
@@ -65,7 +64,7 @@ export const Home = () => {
                 commentsCount={0}
                 likesCount={0}
                 tags={obj.tags}
-                isEditable={userData?._id === obj.user._id}
+                isEditable={userData?._id === obj.user?._id}
               />
             ))}
         </Grid>
